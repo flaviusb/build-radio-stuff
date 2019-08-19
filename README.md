@@ -22,4 +22,5 @@ dev-python/pyyaml
 net-wireless/uhd
 sci-libs/gsl
 x11-libs/qwt
+dev-python/six
 ```
