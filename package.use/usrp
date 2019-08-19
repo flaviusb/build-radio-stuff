@@ -1,0 +1,4 @@
+>=net-wireless/uhd-3.14.0.0 usb
+# required by net-wireless/uhd-3.14.0.0::gentoo
+# required by net-wireless/uhd (argument)
+>=sys-libs/ncurses-6.1-r2 tinfo
