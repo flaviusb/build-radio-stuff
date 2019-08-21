@@ -30,7 +30,8 @@ then
 fi
 
 cd "$SOURCE_BASE"
-git clone https://github.com/bastibl/gr-ieee802-11.git -b master --single-branch
+#git clone https://github.com/bastibl/gr-ieee802-11.git -b master --single-branch
+git clone https://github.com/flaviusb/gr-ieee802-11.git -b patch-1 --single-branch
 cd gr-ieee802-11
 mkdir build
 cd build
