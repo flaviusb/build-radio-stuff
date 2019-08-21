@@ -1,0 +1,15 @@
+#PyQt5 is needed for generated apps from GNURadio-Companion
+# required by dev-qt/qtcore-5.12.3::gentoo
+# required by dev-qt/qtxml-5.12.3::gentoo
+# required by dev-python/PyQt5-5.10.1-r1::gentoo
+# required by PyQt5 (argument)
+>=dev-libs/libpcre2-10.32 pcre16
+# Add gui component
+>=dev-python/PyQt5-5.10.1-r1 gui widgets
+# required by dev-qt/qtgui-5.12.3-r1::gentoo[xcb]
+# required by dev-qt/qtwidgets-5.12.3::gentoo
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[widgets]
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libxcb-1.13.1 xkb
+
