@@ -1,0 +1,2 @@
+>=sys-libs/zlib-1.2.11-r2 minizip
+>=media-video/vlc-3.0.7.1 zeroconf mp3 mpeg theora vorbis opus gstreamer
