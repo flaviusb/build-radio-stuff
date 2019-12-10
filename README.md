@@ -1,8 +1,16 @@
 # build-radio-stuff
 
+## How to install
+
+This assumes you are on reasonably recent distribution of Linux.
+
+Start by installing needed dependencies using your package manager. See the 'Packages that might be needed' section for a list.
+
+Then clone this repo using `git clone https://github.com/flaviusb/build-radio-stuff.git`. Inside the generated `build-radio-stuff` directory, you should run `./build-radio.sh`. 
+
 ## Notes
 
-You may have to go through several `make` → identify missing dependancies → `make` cycles. log4cpp and scipy are available in package managers. Install python3 and build-essentials + git, cmake, recent gcc/binutils etc. *Make sure* gnuradio is not already installed via package manager, as this messes up volk detection in gr-foo. Make sure your make.conf flags select the appropriate sse style instructions.
+You may have to go through several `make` → identify missing dependancies → `make` cycles. log4cpp and scipy are available in package managers. Install python3 and build-essentials + git, cmake, recent gcc/binutils etc. *Make sure* gnuradio is not already installed via package manager, as this messes up volk detection in gr-foo. If you are on Gentoo, make sure your make.conf flags select the appropriate sse style instructions.
 
 ## Packages that might be needed
 
@@ -25,3 +33,5 @@ x11-libs/qwt
 dev-python/six
 sci-libs/fftw
 ```
+
+Also, you should have a recent version of Python3 installed, and whatever the equivalent of the `build-essentials` package is for your system that provides gcc, make, binutils and so on. You will also need git installed to clone git repos.
