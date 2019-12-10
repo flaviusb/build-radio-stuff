@@ -35,3 +35,7 @@ sci-libs/fftw
 ```
 
 Also, you should have a recent version of Python3 installed, and whatever the equivalent of the `build-essentials` package is for your system that provides gcc, make, binutils and so on. You will also need git installed to clone git repos.
+
+## Setting up your USRP devices
+
+You will need to plug in the device via an ethernet port, which must be gigabit ethernet speed. The ethernet device must have its IP address statically set to `192.168.10.1`. There is an included script in this repository called `./setup-devices.sh` that will attempt to do this and then scan for attached USRP devices. If your USRP device is not correctly attached, the GNURadio transmission block will not work.
