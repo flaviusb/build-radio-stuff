@@ -1,5 +1,13 @@
 # build-radio-stuff
 
+## How to run
+
+Once you have installed this and plugged in your USRP device, you can use `setup_devices.sh` to attempt to configure your USRP device, and you can use `run_radio.sh` to run GNURadio.
+
+The `run_radio.sh` script requires superuser access, as that is needed for GNURadio to create and use TUN/TAP devices.
+
+The `wifi_transceiver.grc` project is a good place to start for transmitting data wrapped in OFDM frames. While it is running, you should be able to connect to the TAP device called 'tap0' (once you have given it an IP address using something like `sudo ifconfig tap0 192.168.200.1`). It is a TAP device, so it will be expecting Ethernet frames; if you want to send IP packets, you will have to send them over Ethernet. The `wifi_transceiver.grc` project does not deal with ARP, so...
+
 ## How to install
 
 This assumes you are on reasonably recent distribution of Linux.
