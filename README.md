@@ -51,3 +51,14 @@ Also, you should have a recent version of Python3 installed, and whatever the eq
 ## Setting up your USRP devices
 
 You will need to plug in the device via an ethernet port, which must be gigabit ethernet speed. The ethernet device must have its IP address statically set to `192.168.10.1`. There is an included script in this repository called `./setup-devices.sh` that will attempt to do this and then scan for attached USRP devices. If your USRP device is not correctly attached, the GNURadio transmission block will not work.
+
+## Other troubleshooting notes
+
+This has only been tested on Linux, on a reasonably recent kernel and an up to date distro. I used the 4.19.x series and Gentoo.
+
+A number of the things in this setup assume that you have superuser access, and specifically `sudo` on the machine you are using this on.
+
+Interfacing with the transceiver needs TUN/TAP, so you will need to have this enabled on your system. If you have TUN/TAP drivers, but they are not enabled, `sudo modprobe tun` might enable them.
+
+The USRP is easiest to set up directly plugged in through ethernet; it theoretically will work when put through a switch, but I have not tested this. This does mean however that, if the machine has only one network card, it will not have wired internet while it is driving the SDR.
+
